@@ -206,6 +206,7 @@ header .logo_box {
   position: absolute;
   right: 35px;
   top: 75px;
+  cursor: pointer;
 }
 
 header .logo_box img {
@@ -360,8 +361,76 @@ footer > a.instar:hover {
 
 #container .content.this:before,
 #container .content.this:after,
-#container .content.this .conbox:before {
+#container .content.this .conbox:before,
+#container .contrnt.prev:before,
+#container .content.prev:after,
+#container .content.prev .conbox:before,
+#container .content.next:before,
+#container .content.next:after,
+#container .content.next .conbox:before {
   opacity: 0;
+  transition: all 0.6s;
+  transition-delay: 0.3s;
+}
+
+#container .content.this .conbox:before {
+  tranform: translate3d(300px, 0, 0);
+}
+#container .content.this:after {
+  tranform: translate3d(-300px, 0, 0);
+}
+
+#container .content.this h2 {
+  height: auto;
+  padding: 30px 0 20px 50px;
+  color: #000;
+  position: relative;
+  background: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  opacity: 1;
+  transition: all 0.6s;
+  transition-delay: 1.2s;
+}
+
+#container .content.this h2:after {
+  content: "";
+  width: 100%;
+  height: 8px;
+  background: #ed3140;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#container .content .conbox .content_wrap {
+  opacity: 0;
+}
+
+#container .content.this .conbox .content_wrap {
+  padding: 30px 50px 50px 50px;
+  opacity: 1;
+}
+
+#container .content {
+  top: -100%;
+  transition: all 0.8s;
+}
+
+#container .content:nth-of-type(2) {
+  transition-delay: 0.3s;
+}
+
+#container .content:nth-of-type(3) {
+  transition-delay: 0.6s;
+}
+
+#container .content:nth-of-type(4) {
+  transition-delay: 0.8s;
+}
+
+#container.start .content {
+  top: 0;
 }
 
 #container #menu1 {
