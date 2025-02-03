@@ -374,10 +374,10 @@ footer > a.instar:hover {
 }
 
 #container .content.this .conbox:before {
-  tranform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
 }
 #container .content.this:after {
-  tranform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
 }
 
 #container .content.this h2 {
