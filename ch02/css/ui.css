@@ -340,6 +340,7 @@ footer > a.instar:hover {
   width: 25%;
   height: 100%;
   position: absolute;
+  transition: all 0.5s;
 }
 
 #container .content.this {
