@@ -344,9 +344,17 @@ footer > a.instar:hover {
   transition: all 0.5s;
 }
 
+#container .content.this .conbox {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 #container .content.this {
   width: 100%;
   left: 0 !important;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 #container .content.prev {
@@ -410,6 +418,8 @@ footer > a.instar:hover {
 #container .content.this .conbox .content_wrap {
   padding: 30px 50px 50px 50px;
   opacity: 1;
+  transition: all 1.7s;
+  transition-delay: 0.8s;
 }
 
 #container .content {
@@ -533,4 +543,95 @@ footer > a.instar:hover {
   right: -170px;
   top: 100px;
   background-size: 100%;
+}
+
+.pargrph_tit {
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+}
+
+.pargrph_tit:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 8px;
+  background: #ed3140;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.text_box {
+  position: relative;
+}
+
+.text_box h4 {
+  font-size: 40px;
+  color: #d6d4d4;
+  font-weight: 700;
+}
+
+.text_box p {
+  margin-bottom: 50px;
+  color: #ababab;
+  line-height: 20px;
+}
+
+.text_box:nth-child(odd) {
+  text-align: left;
+}
+
+.text_box:nth-child(even) {
+  text-align: right;
+}
+
+.text_box:nth-child(1):after {
+  content: "";
+  display: block;
+  width: 206px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../images/content_img1.png) no-repeat right top;
+  background-size: 206px auto;
+}
+
+.text_box:nth-child(1) p {
+  width: 100%;
+  padding-right: 206px;
+}
+
+.text_box:nth-last-child(1):before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background: url(../images/content_img2.png) no-repeat right top;
+  background-size: 150px;
+}
+
+.text_box:nth-last-child(1):after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 280px;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  background: url(../images/content_img3.png) no-repeat right top;
+  background-size: 170px;
+}
+
+.text_box:nth-last-child(1) p {
+  padding: 0 200px 0 280px;
+}
+
+.text_box:nth-last-child(1) h4 {
+  color: #ed3140;
 }
