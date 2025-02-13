@@ -698,3 +698,103 @@ footer > a.instar:hover {
 .bullet_list {
   margin-top: 20px;
 }
+
+.bullet_list li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #3c4147;
+  position: relative;
+}
+
+.bullet_list li:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #3c4147;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.point_text {
+  padding: 10px 30px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.point_text strong {
+  display: block;
+  padding: 0 0 10px 40px;
+  background: url(../images/point_bg.png) no-repeat;
+  background-size: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3c4147;
+}
+
+.commbtn {
+  width: 150px;
+  display: inline-block;
+  height: 35px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 35px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.commbtn.pink {
+  background: #f92d68;
+  color: #fff;
+}
+
+.book_rollwrap {
+  width: 954px;
+  height: 150px;
+  margin: 40px auto 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.book_rollwrap > button {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0;
+}
+
+.book_rollwrap > button.roll_left {
+  background: url(../images/btn_left.png) no-repeat center center;
+  background-size: 20px;
+  left: 0;
+}
+
+.book_rollwrap > button.roll_right {
+  background: url(../images/btn_right.png) no-repeat center center;
+  background-size: 20px;
+  right: 0;
+}
+
+.book_rollwrap .book_roll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.book_rollwrap .book_roll ul {
+  width: 1000%;
+}
+
+.book_rollwrap .book_roll ul li {
+  float: left;
+  width: 152px;
+  text-align: center;
+}
+
+.book_rollwrap .book_roll ul li img {
+  width: 100px;
+}
