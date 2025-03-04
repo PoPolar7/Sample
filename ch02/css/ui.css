@@ -652,6 +652,16 @@ footer > a.instar:hover {
   background: url(../images/mackbook.png) no-repeat;
   background-size: 954px;
   position: relative;
+  transform-style: preserve-3d;
+  transform: matrix3d(1, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: all 0.6s;
+  transition-delay: 0.8s;
+  opacity: 0;
+}
+
+#menu2.this .notebook {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  opacity: 1;
 }
 
 .detail_content {

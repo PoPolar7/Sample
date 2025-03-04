@@ -32,4 +32,17 @@ $(document).ready(function () {
   $(".roll_right").click(function () {
     $(".book_roll li").eq(-1).insertBefore(".book_roll li:first-child");
   });
+  $(".book_roll li").click(function () {
+    var _this = $(this);
+    var liurl = _this.data("url");
+    $(".notebook").html();
+    $.ajax({
+      type: "GET",
+      url: liurl,
+      dataType: "html",
+      success: function (data) {
+        $(".notebook").html(data);
+      },
+    });
+  });
 });
