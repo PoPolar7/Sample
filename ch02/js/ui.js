@@ -49,4 +49,7 @@ $(document).ready(function () {
     $(this).siblings().removeClass("on");
     $(this).addClass("on");
   });
+  $(".close").click(function () {
+    $(".thankyou_message").css("display", "none");
+  });
 });
